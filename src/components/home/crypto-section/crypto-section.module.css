@@ -1,0 +1,83 @@
+.globalContainer {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  background: url("/assets/images/crypto.png");
+  height: 600px;
+  align-items: center;
+  z-index: 0;
+  position: relative;
+}
+
+.globalContainer::after {
+    content: "";
+    position: absolute;
+    height: 600px;
+    width: 100%;
+    clip-path: polygon(100% 0, 0 0, 100% 20%);
+    background-color: #0a1639;
+    z-index: -1;
+}
+
+.textContainer {
+  display: flex;
+  flex-direction: column;
+  margin-top: 1rem;
+  margin-left: 5rem;
+  align-self: flex-start;
+}
+
+.textContainer p {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #d71023;
+  color: #f8f9fa;
+  text-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  font-weight: 700;
+  display: inline;
+  width: fit-content;
+}
+
+.textContainer p:last-of-type {
+    margin-top: -1rem;
+    margin-left: 2rem;
+}
+
+.rechargeCryptoCard {
+    width: 90%;
+  border-radius: 16px;
+  background: #0a1639;
+  display: inline-flex;
+  padding: 2rem;
+  align-items: center;
+  gap: 2rem;
+  justify-content: center;
+  margin-top: 340px;
+}
+
+.rechargeCryptoCard p {
+  display: flex;
+  /* width: 38.25rem; */
+  flex-direction: column;
+  color: #fff;
+  font-size: 1.5rem;
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+}
+
+.rechargeCryptoCard button {
+  border-radius: 8px;
+  background: var(--bleu-accent, #3c7bf9);
+  /* width: 42.25rem; */
+  height: 5rem;
+  flex-shrink: 0;
+  color: var(--text, #f8f9fa);
+  text-align: center;
+  font-size: 2rem;
+  font-family: Ubuntu;
+  font-weight: 700;
+  font-size: clamp(1rem, 2vw, 1.8rem);
+  padding: 0.5rem 1rem;
+}

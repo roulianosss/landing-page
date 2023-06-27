@@ -1,0 +1,92 @@
+.globalContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background-color: #0d163a;
+  color: var(--text);
+  padding: 4rem;
+}
+
+.titleContainer {
+  align-self: flex-start;
+  margin-left: 3rem;
+}
+
+.titleContainer p {
+  color: #fff;
+  font-size: 3rem;
+  font-family: Ubuntu;
+  font-weight: 300;
+}
+
+.titleContainer p:last-of-type {
+  font-weight: 700;
+}
+
+.contactForm {
+  display: flex;
+  min-width: 100%;
+  gap: 1rem;
+  padding: 2rem;
+}
+
+.userInfosContainer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 30%;
+  gap: 1rem;
+}
+
+.userInfosContainer input {
+  margin-top: 0.25rem;
+  padding: 0.5rem;
+  width: 100%;
+  height: 2.5rem;
+  flex-shrink: 0;
+  font-family: Ubuntu;
+  border-radius: 4px;
+  border: 2px solid var(--button, rgba(255, 255, 255, 0.2));
+  background: var(--text, #f8f9fa);
+  backdrop-filter: blur(5px);
+}
+
+.userInfosContainer input::placeholder {
+  font-family: Ubuntu;
+}
+
+.inputWrapper {
+  width: 100%;
+}
+
+.messageContainer {
+  min-width: 70%;
+}
+
+.messageContainer textarea {
+  padding: 0.5rem;
+  width: 100%;
+  margin-top: 0.25rem;
+  border-radius: 4px;
+  border: 2px solid var(--button, rgba(255, 255, 255, 0.2));
+  background: var(--text, #f8f9fa);
+  backdrop-filter: blur(5px);
+}
+
+.messageContainer textarea::placeholder {
+  font-family: Ubuntu;
+}
+
+.messageContainer button {
+  border: none;
+  margin-top: 1rem;
+  width: 100%;
+  border-radius: 6px;
+  background: var(--bleu-accent, #3c7bf9);
+  height: 2.75rem;
+  color: var(--text, #f8f9fa);
+  text-align: center;
+  font-size: 1.125rem;
+  font-family: Ubuntu;
+  font-weight: 700;
+}

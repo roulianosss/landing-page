@@ -1,0 +1,63 @@
+.globalContainer {
+  min-width: calc(100% + 2px);
+  height: 45.625rem;
+  display: flex;
+  flex-direction: column;
+  background: url("/assets/images/restaurateur-background.png");
+  align-items: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transform: translateX(-2px);
+}
+
+.textContainer {
+  margin-top: 7.25rem;
+  margin-left: 7.25rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.textContainer p {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #d71023;
+  width: fit-content;
+  display: inline-block;
+  color: #f8f9fa;
+  text-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.textContainer p:nth-child(1) {
+  transform: rotate(2deg);
+}
+
+.textContainer p:nth-child(2) {
+  transform: rotate(-4deg);
+  margin-left: 5rem;
+}
+
+.globalContainer button {
+  margin-top: 22rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 33.38713rem;
+  height: 1.40825rem;
+  flex-direction: column;
+  flex-shrink: 0;
+  color: var(--text, #f8f9fa);
+  text-align: center;
+  font-size: 1.5rem;
+  font-family: Ubuntu;
+  font-weight: 700;
+  border: none;
+  border-radius: 6px;
+  background: var(--bleu-accent, #3c7bf9);
+  width: 34.5rem;
+  height: 3.4375rem;
+  flex-shrink: 0;
+}

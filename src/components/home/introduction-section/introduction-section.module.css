@@ -1,0 +1,89 @@
+.globalContainer {
+  min-width: 100%;
+  height: 45.625rem;
+  display: flex;
+  flex-direction: column;
+  background: url("/assets/images/introduction-background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+  align-items: center;
+  background-position: center;
+}
+
+.textContainer {
+  margin-top: 7.25rem;
+  margin-left: 7.25rem;
+  display: flex;
+  flex-direction: column;
+  align-self: flex-start;
+}
+
+.textContainer p {
+  padding: 1rem;
+  border-radius: 8px;
+  background: #d71023;
+  width: fit-content;
+  display: inline-block;
+  color: #f8f9fa;
+  text-shadow: 4px 4px 4px 0px rgba(0, 0, 0, 0.1);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.textContainer p:nth-child(1) {
+  transform: rotate(2deg);
+}
+
+.textContainer p:nth-child(2) {
+  transform: rotate(-4deg);
+  margin-left: 5rem;
+}
+
+.addressInputBarContainer {
+  display: flex;
+  justify-content: center;
+  margin-top: 15rem;
+  min-width: 100%;
+  max-width: 500px;
+}
+
+.addressInputBarContainer input {
+  height: 4.25rem;
+  width: 65%;
+  display: flex;
+  align-items: center;
+  border-radius: 10px 0 0 10px;
+  border: 2px solid #3c7bf9;
+  background: #fff;
+  border-right: none;
+  font-size: 1.5rem;
+  padding: 1.2rem 1.2rem;
+
+  /* Blur 10% */
+  backdrop-filter: blur(5px);
+  max-width: 800px;
+}
+
+.addressInputBarContainer input:focus-visible {
+  outline: none;
+}
+
+.addressInputBarContainer input::placeholder {
+  color: var(--grey, #a7a7a7);
+  font-size: 1.5rem;
+}
+
+.addressInputBarContainer button {
+  width: 25%;
+  height: 4.25rem;
+  border-radius: 0px 10px 10px 0px;
+  background: var(--bleu-accent, #3c7bf9);
+  color: var(--text, #f8f9fa);
+  text-align: center;
+  font-size: clamp(1.5rem, 3vw, 2rem);
+  font-family: Ubuntu;
+  font-weight: 700;
+  border: 2px solid #3c7bf9;
+  border-left: none;
+  max-width: 250px;
+}
