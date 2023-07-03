@@ -4,10 +4,11 @@
   width: 100%;
   background-color: #0a1639;
   color: var(--text);
-  height: 400px;
+  /* height: 400px; */
   margin-top: -1px;
   padding: 0 2rem;
   padding-top: 1rem;
+  padding-bottom: 2rem;
 }
 
 .categoriesContainer {
@@ -47,4 +48,24 @@
 .copyright {
   margin-top: 5rem;
   text-align: center;
+}
+
+@media screen and (max-width: 767px) {
+  .categoriesContainer {
+    flex-direction: column;
+    gap: 2rem;
+    width: 100%;
+    /* align-items: center; */
+  }
+
+  .groupContainer h3 {
+    min-width: 100%;
+  }
+
+  .groupContainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
 }

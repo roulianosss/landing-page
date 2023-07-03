@@ -77,3 +77,47 @@
   margin-top: 6rem;
   padding: 0 1rem;
 }
+
+@media screen and (max-width: 767px) {
+  
+  .wordingContainer {
+    margin-top: 18rem;
+  padding: 1rem;
+  }
+  
+  .wordingContainer p {
+    text-align: center;
+    width: fit-content;
+  }
+
+  .wordingContainer p:first-child {
+    transform: translateX(0px);
+  }
+
+  .textContainer p:last-of-type {
+    transform: translate(0px);
+    max-height: none;
+  }
+
+  .textContainer {
+    transform: translate(0);
+  }
+
+  .whiteBackground {
+    flex-direction: column;
+    height: auto;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .whiteBackground img {
+    align-self: center;
+  }
+
+  .whiteBackground p {
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1rem;
+    margin-top: 1rem;
+  }
+}

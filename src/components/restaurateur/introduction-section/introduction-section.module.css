@@ -61,3 +61,9 @@
   height: 3.4375rem;
   flex-shrink: 0;
 }
+
+@media screen and (max-width: 767px) {
+  .textContainer {
+    margin-left: 1rem;
+  }
+}

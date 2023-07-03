@@ -163,3 +163,79 @@
 .socialLogoContainer img:first-child {
   transform: translateX(0.3rem);
 }
+
+@media screen and (max-width: 767px) {
+  .title {
+    flex-direction: column;
+    font-size: 2rem;
+  }
+
+  .description {
+    font-size: 1.5rem;
+    margin-top: 0;
+    padding-bottom: 3rem;
+  }
+
+  .globalContainer::after {
+    /* top: clamp(1600px, 1vw, 1600px); */
+    /* padding-top: 9rem; */
+    margin-top: 25rem;
+  }
+
+  .cardImage {
+    width: calc(100% - 32px);
+    margin: 0 1rem;
+  }
+
+  .cardContainer {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 9rem;
+  }
+
+  .globalContainer > div:nth-child(6) {
+    margin-top: 2rem;
+  }
+
+  .cardTextContainer {
+    max-width: 100%;
+    align-items: center;
+  }
+
+  .cardTextContainer p {
+    font-size: 1rem;
+    max-width: 100%;
+    padding: 0 1rem;
+  }
+
+  .cardTextContainerReversed {
+    align-items: center;
+    text-align: center;
+  }
+
+  .description {
+    padding-top: 5rem;
+    padding-bottom: -5rem;
+  }
+
+  .socialLinksContainer {
+    flex-direction: column;
+  }
+
+
+  .videoContainer {
+    margin-top: 3rem;
+  }
+
+  .videoContainer h3 {
+    font-size: clamp(1.2rem, 5vw, 2rem);
+  }
+}
+
+@media screen and (max-width: 530px) {
+  .globalContainer::after {
+    /* top: clamp(1600px, 1vw, 1600px); */
+    /* padding-top: 9rem; */
+    margin-top: 35rem;
+  }
+}
