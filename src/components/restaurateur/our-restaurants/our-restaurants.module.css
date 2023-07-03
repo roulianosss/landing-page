@@ -1,23 +1,39 @@
 .globalContainer {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
 }
 
 .globalContainer h3 {
-    color: #0A1639;
-font-size: 3rem;
-font-family: Ubuntu;
-font-weight: 700;
-text-align: center;
-margin-top: 2rem;
+  color: #0a1639;
+  font-size: 3rem;
+  font-family: Ubuntu;
+  font-weight: 700;
+  text-align: center;
+  margin-top: 2rem;
 }
 
 .restaurantContainer {
-    display: flex;
-    flex-wrap: wrap;
-    margin-top: 4rem;
-    padding: 0 4rem;
-    justify-content: center;
-    gap: 3rem;
+  display: flex;
+  flex-wrap: wrap;
+  margin-top: 4rem;
+  padding: 0 4rem;
+  justify-content: center;
+  gap: 3rem;
 }
+
+@media screen and (max-width: 767px) {
+    .textContainer {
+      margin-left: 1rem;
+    }
+  
+    .globalContainer button {
+      width: calc(100% - 2rem);
+    }
+  
+    .globalContainer h3 {
+        margin-top: 6rem;
+      font-size: clamp(1.3rem, 5vw, 2.5rem);
+    }
+  }
+  

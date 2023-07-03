@@ -90,3 +90,23 @@
   font-family: Ubuntu;
   font-weight: 700;
 }
+
+@media screen and (max-width: 767px) {
+  .globalContainer {
+    padding: 0rem;
+  }
+  .titleContainer {
+    margin-left: 0;
+    padding: 0 1rem;
+  }
+  .titleContainer p {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
+  .contactForm {
+    flex-direction: column;
+    padding: 0 1rem;
+  }
+  .userInfosContainer {
+    width: 100%;
+  }
+}

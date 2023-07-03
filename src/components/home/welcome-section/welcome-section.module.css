@@ -179,7 +179,7 @@
   .globalContainer::after {
     /* top: clamp(1600px, 1vw, 1600px); */
     /* padding-top: 9rem; */
-    margin-top: 25rem;
+    top: 88rem;
   }
 
   .cardImage {
@@ -203,9 +203,10 @@
   }
 
   .cardTextContainer p {
-    font-size: 1rem;
+    font-size: 1.1rem;
     max-width: 100%;
     padding: 0 1rem;
+    text-align: center;
   }
 
   .cardTextContainerReversed {
@@ -236,6 +237,13 @@
   .globalContainer::after {
     /* top: clamp(1600px, 1vw, 1600px); */
     /* padding-top: 9rem; */
-    margin-top: 35rem;
+    top: 95rem;
+  }
+}
+@media screen and (max-width: 400px) {
+  .globalContainer::after {
+    /* top: clamp(1600px, 1vw, 1600px); */
+    /* padding-top: 9rem; */
+    top: 105rem;
   }
 }

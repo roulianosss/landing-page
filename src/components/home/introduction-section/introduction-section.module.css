@@ -112,7 +112,6 @@
 
   .addressInputBarContainer input::placeholder {
     font-size: 1.2rem;
-    content: 'ok';
   }
   
   .addressInputBarContainer button {

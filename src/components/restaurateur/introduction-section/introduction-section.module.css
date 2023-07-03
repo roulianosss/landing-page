@@ -66,4 +66,12 @@
   .textContainer {
     margin-left: 1rem;
   }
+
+  .globalContainer button {
+    width: calc(100% - 2rem);
+  }
+
+  .globalContainer h3 {
+    font-size: clamp(1.5rem, 3vw, 2.5rem);
+  }
 }
