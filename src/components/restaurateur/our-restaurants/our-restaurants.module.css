@@ -33,7 +33,7 @@
   
     .globalContainer h3 {
         margin-top: 6rem;
-      font-size: clamp(1.3rem, 5vw, 2.5rem);
+      font-size: clamp(1.6rem, 5vw, 2.5rem);
     }
   }
   

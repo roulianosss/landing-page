@@ -1,7 +1,7 @@
 import NojykLogo from "@/components/shared/nojykLogo";
 import styles from "./welcome-section.module.css";
 import Image from "next/image";
-import Link from "next/link";
+import VideoContainer from "@/components/shared/video/video-container";
 
 const WelcomeSection = () => {
   return (
@@ -37,7 +37,9 @@ const WelcomeSection = () => {
           </p>
         </div>
       </div>
-      <div className={styles.cardContainer}>
+      <div
+        className={`${styles.cardContainer} ${styles.cardContainerReversed}`}
+      >
         <div
           className={`${styles.cardTextContainer} ${styles.cardTextContainerReversed}`}
         >
@@ -62,7 +64,9 @@ const WelcomeSection = () => {
           className={styles.cardImage}
         />
       </div>
-      <p className={styles.description}>Notre demarche pour vous servir</p>
+      <h3 className={styles.description} style={{ fontSize: "1.5rem" }}>
+        Notre demarche pour vous servir
+      </h3>
       <div className={styles.cardContainer}>
         <Image
           src="/assets/images/economie.png"
@@ -70,7 +74,7 @@ const WelcomeSection = () => {
           height={550}
           alt="illustration livraison"
           className={styles.cardImage}
-          style={{objectFit: 'cover', objectPosition:'0% 0%'}}
+          style={{ objectFit: "cover", objectPosition: "0% 0%" }}
         />
         <div className={styles.cardTextContainer}>
           <h3>
@@ -91,82 +95,7 @@ const WelcomeSection = () => {
         </div>
       </div>
 
-      <div className={styles.videoContainer}>
-        <h3>On vous en dit plus en vidéo </h3>
-        {/* <Image
-          src="/assets/images/video-placeholder.png"
-          width={960}
-          height={540}
-          alt="video placeholder"
-          className={styles.video}
-        /> */}
-        <iframe
-          width="560"
-          height="315"
-          src="https://www.youtube.com/embed/lHBixyYqt8Y"
-          title="YouTube video player"
-          frameBorder="0"
-          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-          allowFullScreen
-          className={styles.video}
-        ></iframe>
-        <div className={styles.socialLinksContainer}>
-          <div className={styles.socialTextContainer}>
-            <p>Vous aimez nos talents d’acteurs ? </p>
-            <b>Retrouvez nous sur Youtube et Instagram </b>
-          </div>
-          <div className={styles.socialLogoContainer}>
-            <Link href="https://www.instagram.com/nojykoff/?hl=fr">
-              <Image
-                src="/assets/logos/instagram.svg"
-                width={46}
-                height={46}
-                alt="logo instagram"
-              />
-            </Link>
-            <Link href="https://www.facebook.com/NOJYK/">
-              <Image
-                src="/assets/logos/facebook.png"
-                width={46}
-                height={46}
-                alt="logo facebook"
-              />
-            </Link>
-            <Link href="https://www.tiktok.com/@nojykoff/">
-              <Image
-                src="/assets/logos/tiktok.png"
-                width={46}
-                height={46}
-                alt="logo tiktok"
-              />
-            </Link>
-            <Link href="https://twitter.com/Nojykoff">
-              <Image
-                src="/assets/logos/twitter.png"
-                width={46}
-                height={46}
-                alt="logo twitter"
-              />
-            </Link>
-            <Link href="https://www.youtube.com/channel/UCeF2gfs9PR2PeA6--5ruryg">
-              <Image
-                src="/assets/logos/youtube.svg"
-                width={46}
-                height={46}
-                alt="logo youtube"
-              />
-            </Link>
-            <Link href="https://fr.linkedin.com/company/nojyk">
-              <Image
-                src="/assets/logos/linkedin.png"
-                width={46}
-                height={46}
-                alt="logo linkedin"
-              />
-            </Link>
-          </div>
-        </div>
-      </div>
+      <VideoContainer url="https://www.youtube.com/embed/lHBixyYqt8Y" />
     </div>
   );
 };

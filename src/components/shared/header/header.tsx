@@ -12,7 +12,7 @@ const Header = () => {
   const [isOpenMenu, setIsOpenMenu] = useState(false)
 
   return (
-    <div className={styles.globalContainer} style={{maxHeight: isOpenMenu ? '600px' : '60px'}}>
+    <div className={styles.globalContainer} id="header" style={{maxHeight: isOpenMenu ? '600px' : '60px'}}>
       <div className={styles.logoAndLinksContainer}>
         <div className={styles.logoContainer}>
           <Image

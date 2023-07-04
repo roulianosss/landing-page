@@ -30,7 +30,7 @@ const PresentationSection = () => {
           className={styles.cardImage}
         />
       </div>
-      <div className={styles.cardContainer}>
+      <div className={`${styles.cardContainer} ${styles.cardContainerReversed}`}>
         <Image
           src="/assets/images/remuneration.png"
           width={676}

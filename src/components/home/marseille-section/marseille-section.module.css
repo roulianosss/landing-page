@@ -88,6 +88,7 @@
   .wordingContainer p {
     text-align: center;
     width: fit-content;
+    font-size: 1.5rem;
   }
 
   .wordingContainer p:first-child {
@@ -108,6 +109,7 @@
     height: auto;
     align-items: center;
     justify-content: center;
+    width: 100%;
   }
 
   .whiteBackground img {
@@ -116,7 +118,7 @@
 
   .whiteBackground p {
     text-align: center;
-    font-size: 1.2rem;
+    font-size: 1.1rem;
     padding: 1rem;
     margin-top: 1rem;
   }

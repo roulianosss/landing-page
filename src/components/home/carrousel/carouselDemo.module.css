@@ -97,10 +97,16 @@
   .globalContainer h1 {
     text-align: center;
     margin: 0;
-    margin-top: 1rem;
+    margin-top: 2rem;
     font-size: 2rem;
   }
   .carrouselContainer {
     margin-top: 1rem;
+  }
+
+  .itemImage {
+    flex-shrink: 0;
+    border-radius: 2px;
+    object-fit: cover;
   }
 }

@@ -7,18 +7,6 @@
   color: var(--text);
   position: relative;
   z-index: 0;
-  padding-bottom: 10rem;
-}
-
-.globalContainer::after {
-  content: "";
-  position: absolute;
-  clip-path: polygon(0 3%, 100% 0%, 100% 100%, 0 97%);
-  top: 1000px;
-  background-color: #0a1639;
-  width: 100vw;
-  height: 70rem;
-  z-index: -1;
 }
 
 .title {
@@ -61,8 +49,43 @@
 .cardContainer {
   display: flex;
   gap: 2.25rem;
-  margin-top: 3rem;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
   width: 100%;
+  position: relative;
+}
+
+.cardContainer::before {
+  content: "";
+  clip-path: polygon(0 80%, 100% 20%, 100% 100%, 0 100%);
+  background-color: #fff;
+  position: absolute;
+  top: -4rem;
+  width: 100%;
+  height: 5rem;
+  z-index: 1;
+}
+
+.cardContainer::after {
+  content: "";
+  clip-path: polygon(0 0, 100% 1%, 100% 100%, 0 56%);
+  background-color: #fff;
+  position: absolute;
+  bottom: -3rem;
+  width: 100%;
+  height: 5rem;
+  z-index: 1;
+}
+
+.cardContainerReversed {
+  background-color: #0a1639;
+}
+
+.cardContainerReversed::after {
+  background-color: transparent;
+}
+.cardContainerReversed::before {
+  background-color: transparent;
 }
 
 .cardContainer:first-of-type {
@@ -200,10 +223,9 @@
 
 .textContainer p:last-of-type {
   background-color: #4a7cfd;
-  /* max-height: 87px; */
   transform: translateX(+60px);
   color: #fff;
-white-space: nowrap;
+  white-space: nowrap;
 }
 
 .textContainer p:first-of-type {
@@ -223,29 +245,17 @@ white-space: nowrap;
   border-radius: 1rem;
 }
 
-@media screen and (max-width: 900px) {
-  .globalContainer::after {
-    top: 1000px;
-    /* height: 75rem; */
-  }
-}
-
-@media screen and (max-width: 860px) {
-  .globalContainer::after {
-    top: 1100px;
-    /* height: 110rem; */
-  }
-}
-
 @media screen and (max-width: 767px) {
-  .globalContainer::after {
-    top: 1400px;
-    height: 120rem;
-
+  .globalContainer {
+    padding-bottom: 0;
   }
 
   .cardContainer {
     flex-direction: column;
+  }
+
+  .globalContainer > div:nth-child(3) {
+    padding-top: 5rem;
   }
 
   .cardImage {
@@ -266,17 +276,26 @@ white-space: nowrap;
   .cardTextContainer p {
     text-align: center;
     padding: 0;
+    font-size: 1.1rem;
+  }
+
+  .cardTextContainerReversed h3::after {
+    transform: translateX(320px);
   }
 
   .wordingContainer {
-    width: 100%;
-    padding: 0 1rem;
-    margin-left: -3rem;
-  }  
+    width: fit-content;
+    position: absolute;
+    transform: translateX(-15px);
+  }
 
   .wordingContainer p {
     transform: translate(0px) !important;
     font-size: clamp(1.1rem, 5vw, 2rem);
+  }
+
+  .textContainer {
+    width: 100%;
   }
 
   .description {

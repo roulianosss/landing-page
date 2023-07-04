@@ -1,5 +1,6 @@
 import React from "react";
 import Image from "next/image";
+import Link from "next/link";
 
 interface NojykLogoProps {
   size: number;
@@ -7,12 +8,14 @@ interface NojykLogoProps {
 
 const NojykLogo: React.FC<NojykLogoProps> = ({ size }) => {
   return (
-    <Image
-      src="./assets/logos/nojyk.svg"
-      width={size}
-      height={size / 3.25}
-      alt="logo nojyk"
-    />
+    <Link href="#header">
+      <Image
+        src="./assets/logos/nojyk.svg"
+        width={size}
+        height={size / 3.25}
+        alt="logo nojyk"
+      />
+    </Link>
   );
 };
 

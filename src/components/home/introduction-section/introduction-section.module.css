@@ -89,13 +89,17 @@
 }
 
 @media screen and (max-width: 767px) {
+
   .textContainer {
-    margin: 1rem;
-    
+    margin: 4rem auto;
+    display: flex;
+    width: fit-content;
+    justify-content: center;
   }
 
   .textContainer p {
     text-align: center;
+    font-size: 1.7rem;
   }
 
   .addressInputBarContainer {
