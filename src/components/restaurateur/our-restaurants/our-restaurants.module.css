@@ -35,5 +35,20 @@
         margin-top: 6rem;
       font-size: clamp(1.6rem, 5vw, 2.5rem);
     }
+
+    .restaurantContainer {
+      display: flex;
+      flex-wrap: wrap;
+      margin-top: 4rem;
+      padding: 0 1rem;
+      justify-content: center;
+      gap: 1rem;
+    }
+    
+    .restaurantContainer img {
+      width: calc(50% - 2rem);
+      height: auto;
+      object-fit: cover;
+    }
   }
   
